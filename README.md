@@ -1,5 +1,6 @@
 # Pruning-at-a-Glance
 These are the compressed models made available using the paper "Pruning at a Glance: A Structured Class-Blind Pruning Technique for Model Compression" (https://openreview.net/forum?id=S1MdLyrYom)
+
 To use the compressed models:
 
 #This steps loads the dimensions of the compressed model
