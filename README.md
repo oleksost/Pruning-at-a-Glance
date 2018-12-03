@@ -10,4 +10,4 @@ model = resnet_new(dimensions, pretrained=False)
 #loads the parameters of the model
 model.load_state_dict(torch.load('ResNet50_compressed30percent.pkl'))
 ```
-Now you are ready to use the compressed model!
+Now you are ready to use the compressed model
