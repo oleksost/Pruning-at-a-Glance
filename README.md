@@ -6,6 +6,7 @@ The code to create ResNet is an eddited version of the pytorch released version 
 To use the compressed models, use the below commands:
 
 ```
+#needed imports to be used to load the pretrained compressed model
 import torch
 from resnet_new import resnet50 as resnet
 
@@ -24,3 +25,4 @@ The performance of the provided compressed models is as below:
 | ------------- | ------------- |
 | ResNet-50 Baseline  | 76.15  |
 | ResNet-50 - 30%_Pruned  | **76.24**  |
+| ResNet-50 - 45.65%_Pruned  | 75.62  |
