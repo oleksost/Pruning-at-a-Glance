@@ -2,8 +2,8 @@ These are the compressed models made available using the paper "Pruning at a Gla
 
 To use the compressed models, use the below commands:
 
-This steps loads the dimensions of the compressed model
 ```
+#This step loads the dimensions of the compressed model
 dimensions=torch.load('dimensions_ResNet50_compressed30percent.pkl')
 #Uses the dimensions to create a new resnet model
 model = resnet_new(dimensions, pretrained=False)
