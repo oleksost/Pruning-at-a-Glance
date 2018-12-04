@@ -1,5 +1,8 @@
 These are the compressed models made available using the paper "Pruning at a Glance: A Structured Class-Blind Pruning Technique for Model Compression" (https://openreview.net/forum?id=S1MdLyrYom)
 
+The code to create ResNet is an eddited version of vision/torchvision/models/resnet.py
+      
+
 To use the compressed models, use the below commands:
 
 ```
