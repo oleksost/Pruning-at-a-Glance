@@ -11,3 +11,10 @@ model = resnet_new(dimensions, pretrained=False)
 model.load_state_dict(torch.load('ResNet50_compressed30percent.pkl'))
 ```
 Now you are ready to use the compressed model!
+
+The performance of the compressed models is as below:
+
+| Model  | Accuracy |
+| ------------- | ------------- |
+| ResNet-50 Baseline  | 96.15  |
+| ResNet-30%_Pruned  | 96.24  |
