@@ -12,7 +12,7 @@ model.load_state_dict(torch.load('ResNet50_compressed30percent.pkl'))
 ```
 Now you are ready to use the compressed model!
 
-The performance of the compressed models is as below:
+The performance of the provided compressed models is as below:
 
 | Model  | Accuracy |
 | ------------- | ------------- |
