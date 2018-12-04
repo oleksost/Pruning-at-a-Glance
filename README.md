@@ -17,4 +17,4 @@ The performance of the provided compressed models is as below:
 | Model  | Accuracy |
 | ------------- | ------------- |
 | ResNet-50 Baseline  | 96.15  |
-| ResNet-50 - 30%_Pruned  | 96.24  |
+| ResNet-50 - 30%_Pruned  | **96.24**  |
