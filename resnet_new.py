@@ -37,10 +37,10 @@ class BasicBlock(nn.Module):
 
     def __init__(self, inplanes, planes, stride=1, downsample=None):
         super(BasicBlock, self).__init__()
-        self.conv1 = nn.Conv2dr(inplanes, planes, kernel_size=3, stride=stride, padding=1, bias=False)
+        self.conv1 = nn.Conv2d(inplanes, planes, kernel_size=3, stride=stride, padding=1, bias=False)
         self.bn1 = nn.BatchNorm2d(planes)
         self.relu = nn.ReLU(inplace=True)
-        self.conv2 = nn.Conv2dr(planes, planes, kernel_size=3, padding=1, bias=False)
+        self.conv2 = nn.Conv2d(planes, planes, kernel_size=3, padding=1, bias=False)
         self.bn2 = nn.BatchNorm2d(planes)
         self.downsample = downsample
         self.stride = stride
@@ -69,11 +69,11 @@ class Bottleneck(nn.Module):
 
     def __init__(self, inplanes, planes, dimensions, stride=1, downsample=None):
         super(Bottleneck, self).__init__()
-        self.conv1 = nn.Conv2dr(dimensions[0], dimensions[1], kernel_size=1, bias=False)
+        self.conv1 = nn.Conv2d(dimensions[0], dimensions[1], kernel_size=1, bias=False)
         self.bn1 = nn.BatchNorm2d(dimensions[1])
-        self.conv2 = nn.Conv2dr(dimensions[1], dimensions[2], kernel_size=3, stride=stride, padding=1, bias=False)
+        self.conv2 = nn.Conv2d(dimensions[1], dimensions[2], kernel_size=3, stride=stride, padding=1, bias=False)
         self.bn2 = nn.BatchNorm2d(dimensions[2])
-        self.conv3 = nn.Conv2dr(dimensions[2], dimensions[3], kernel_size=1, bias=False)
+        self.conv3 = nn.Conv2d(dimensions[2], dimensions[3], kernel_size=1, bias=False)
         self.bn3 = nn.BatchNorm2d(dimensions[3])
         self.relu = nn.ReLU(inplace=True)
         self.downsample = downsample
@@ -107,7 +107,7 @@ class ResNet(nn.Module):
     def __init__(self, block, layers, dimensions, num_classes=1000):
         self.inplanes = dimensions[0]
         super(ResNet, self).__init__()
-        self.conv1 = nn.Conv2dr(3, dimensions[0], kernel_size=7, stride=2, padding=3,
+        self.conv1 = nn.Conv2d(3, dimensions[0], kernel_size=7, stride=2, padding=3,
                                bias=False)
         self.bn1 = nn.BatchNorm2d(dimensions[0])
         self.relu = nn.ReLU(inplace=True)
@@ -130,7 +130,7 @@ class ResNet(nn.Module):
         downsample = None
         if stride != 1 or self.inplanes != dimensions:
             downsample = nn.Sequential(
-                nn.Conv2dr(dimensions[0], dimensions[3], kernel_size=1, stride=stride, bias=False),
+                nn.Conv2d(dimensions[0], dimensions[3], kernel_size=1, stride=stride, bias=False),
                 nn.BatchNorm2d(dimensions[3]),
             )
 
