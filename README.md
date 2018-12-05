@@ -27,4 +27,4 @@ The performance of the provided compressed models is as below:
 | ResNet-50 - 30%_Pruned  | **76.24**  |
 | ResNet-50 - 45.65%_Pruned  | 75.62  |
 
-Please cite our paper if you use the model
+Please cite our paper if you use the models
