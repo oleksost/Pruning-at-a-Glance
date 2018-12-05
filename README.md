@@ -1,4 +1,4 @@
-These are the compressed models made available using the paper "Pruning at a Glance: A Structured Class-Blind Pruning Technique for Model Compression" (https://openreview.net/forum?id=S1MdLyrYom)
+These are the compressed models made available using the paper "Pruning at a Glance: A Structured Class-Blind Pruning Technique for Model Compression" (https://openreview.net/forum?id=S1MdLyrYom) on **ImageNet** dataset.
 
 The code to create ResNet is an eddited version of the pytorch released version https://github.com/pytorch/vision/blob/master/torchvision/models/resnet.py
       
@@ -26,3 +26,5 @@ The performance of the provided compressed models is as below:
 | ResNet-50 Baseline  | 76.15  |
 | ResNet-50 - 30%_Pruned  | **76.24**  |
 | ResNet-50 - 45.65%_Pruned  | 75.62  |
+
+Please cite our paper if you use the model
